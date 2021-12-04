@@ -1,0 +1,7 @@
+<div [ngClass]="[todo.completed === true ? 'is-complete' : '']" class="todo">
+  <p>
+    <input type="checkbox" (change)="handleToggle(todo)" />
+    {{ todo.title }}
+    <button class="del" (click)="handleDelete(todo)">x</button>
+  </p>
+</div>
